@@ -2,19 +2,35 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-05T19:01:10 CET" name="Default suite" finished-at="2023-05-05T19:02:06 CET" duration-ms="56648">
+  <suite started-at="2023-05-05T19:22:21 CET" name="Default suite" finished-at="2023-05-05T19:24:08 CET" duration-ms="107820">
     <groups>
     </groups>
-    <test started-at="2023-05-05T19:01:10 CET" name="Default test" finished-at="2023-05-05T19:02:06 CET" duration-ms="56648">
+    <test started-at="2023-05-05T19:22:21 CET" name="Default test" finished-at="2023-05-05T19:24:08 CET" duration-ms="107820">
       <class name="testcases.Login">
-        <test-method signature="Login_with_valid_Credentilials()[pri:1, instance:testcases.Login@21282ed8]" started-at="2023-05-05T19:01:10 CET" name="Login_with_valid_Credentilials" finished-at="2023-05-05T19:01:40 CET" duration-ms="30159" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.Login@47e2e487]" started-at="2023-05-05T19:22:21 CET" name="setUp" finished-at="2023-05-05T19:23:30 CET" duration-ms="69116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login_with_valid_Credentilials()[pri:1, instance:testcases.Login@47e2e487]" started-at="2023-05-05T19:23:30 CET" name="Login_with_valid_Credentilials" finished-at="2023-05-05T19:23:32 CET" duration-ms="2679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_with_valid_Credentilials -->
-        <test-method signature="Login_with_invalid_Credentilials()[pri:2, instance:testcases.Login@21282ed8]" started-at="2023-05-05T19:01:40 CET" name="Login_with_invalid_Credentilials" finished-at="2023-05-05T19:02:06 CET" duration-ms="25909" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Login@47e2e487]" started-at="2023-05-05T19:23:32 CET" name="tearDown" finished-at="2023-05-05T19:23:33 CET" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.Login@47e2e487]" started-at="2023-05-05T19:23:33 CET" name="setUp" finished-at="2023-05-05T19:24:04 CET" duration-ms="31265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login_with_invalid_Credentilials()[pri:2, instance:testcases.Login@47e2e487]" started-at="2023-05-05T19:24:04 CET" name="Login_with_invalid_Credentilials" finished-at="2023-05-05T19:24:07 CET" duration-ms="2741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_with_invalid_Credentilials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Login@47e2e487]" started-at="2023-05-05T19:24:07 CET" name="tearDown" finished-at="2023-05-05T19:24:08 CET" duration-ms="1310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testcases.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
