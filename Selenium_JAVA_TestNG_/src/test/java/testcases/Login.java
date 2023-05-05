@@ -5,6 +5,8 @@ package testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,7 +16,19 @@ public class Login {
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp() {
-		driver = new ChromeDriver();
+		String browserName = "chrome";
+		if(browserName.equals("chrome")) {
+			driver = new ChromeDriver();
+			
+		}
+		else if(browserName.equals("farefox"))
+		{
+				driver = new FirefoxDriver();
+		}
+		else if(browserName.equals("edge")) {
+			driver = new EdgeDriver();
+		}
+	
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");
 		driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
@@ -36,6 +50,7 @@ public class Login {
 	@Test(priority = 2)
 	public void Login_with_invalid_Credentilials()
 	{
+		
 		driver.findElement(By.id("input-email")).sendKeys("tt5820724ttt@gmail.com");
 		driver.findElement(By.id("input-password")).sendKeys("azerty1234");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
