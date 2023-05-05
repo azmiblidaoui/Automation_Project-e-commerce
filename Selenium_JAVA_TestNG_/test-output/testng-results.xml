@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-05T19:01:10 CET" name="Default suite" finished-at="2023-05-05T19:02:06 CET" duration-ms="56648">
+    <groups>
+    </groups>
+    <test started-at="2023-05-05T19:01:10 CET" name="Default test" finished-at="2023-05-05T19:02:06 CET" duration-ms="56648">
+      <class name="testcases.Login">
+        <test-method signature="Login_with_valid_Credentilials()[pri:1, instance:testcases.Login@21282ed8]" started-at="2023-05-05T19:01:10 CET" name="Login_with_valid_Credentilials" finished-at="2023-05-05T19:01:40 CET" duration-ms="30159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_with_valid_Credentilials -->
+        <test-method signature="Login_with_invalid_Credentilials()[pri:2, instance:testcases.Login@21282ed8]" started-at="2023-05-05T19:01:40 CET" name="Login_with_invalid_Credentilials" finished-at="2023-05-05T19:02:06 CET" duration-ms="25909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_with_invalid_Credentilials -->
+      </class> <!-- testcases.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
