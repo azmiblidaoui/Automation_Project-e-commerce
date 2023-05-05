@@ -5,7 +5,9 @@
     <classes>
       <class name="testcases.Login">
         <methods>
+          <include name="tearDown"/>
           <include name="Login_with_invalid_Credentilials"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- testcases.Login -->
     </classes>
