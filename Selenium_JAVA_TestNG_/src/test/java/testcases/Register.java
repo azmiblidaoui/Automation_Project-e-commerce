@@ -2,33 +2,21 @@ package testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import base.Base;
 
-public class Register {
+
+public class Register extends Base {
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp() {
-	String browserName= "chrome";
-	if(browserName.equals("chrome")) {
-	driver = new ChromeDriver();
-		
-	}
-	else if(browserName.equals("farefox"))
-	{
-	driver = new FirefoxDriver();
-	}
-	else if(browserName.equals("edge")) {
-	driver = new EdgeDriver();
-	}
-	driver.manage().window().maximize();
-	driver.get("https://tutorialsninja.com/demo/");
+	driver = initialize_broxser_and_oppen_application("chrome");
+	
 	driver.findElement(By.xpath("//span[normalize-space()='My Account']")).click();
 	driver.findElement(By.linkText("Register")).click();
 		
